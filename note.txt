@@ -1,0 +1,6 @@
+adding interacivity to our navbar icon.
+
+we will use usestate hook to check the nav state to know if the page is open or close.
+then we craeted a function that will handle the navState change then we pass the onClick to the nav element using the iteration method to handle the change of state.
+
+we also used the useEffect to work on making the nav-dark class sticky upon scroll. you wont see this till we add other sections to our page lets start with hero section.
