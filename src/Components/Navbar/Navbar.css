@@ -1,0 +1,119 @@
+nav{
+    width: 100%;
+    position: fixed;
+    padding: 10px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.nav-dark{
+    background: var(--tertiary-color) ;
+}
+.nav-brand img{
+    width: 70px;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav .nav-links li{
+    font-size: 16px;
+    color: var(--white-color);
+    font-weight: 500px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-shadow: var(--text-shadow);
+}
+
+
+/* NAVBAR MEDIA QUERY */
+
+@media (max-width: 850px){
+    .nav-links{
+        position: fixed;
+        top: 0;
+        right: -300px;
+        bottom: 0;
+        background-color: var(--tertiary-color);
+        flex-direction: column;
+        width: 200px;
+        justify-content: start;
+        align-items: start;
+        padding-top: 50px;
+        transition: 0.5s;
+    }
+    nav ul.open{
+      right: 0;
+    }
+    .nav-links li {
+        margin-top: 20px;
+        font-size: 16px;
+
+    }
+    /* styling the icon */
+  nav .menu-icon{
+    display: block;
+    color: var(--white-color);
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: auto;
+  }
+  nav .menu-icon .menu-icons{
+    position: relative;
+  }
+  nav .menu-icon .icon,
+  nav .menu-icon .icon::before,
+  nav .menu-icon .icon::after{
+     height: 3px;
+     border-radius: 10px;
+     background-color: var(--white-color);
+     transition: all 0.5s;
+
+  
+  }
+  nav .menu-icon .icon{
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+  nav .menu-icon .icon::before{
+    content: '';
+    width: 40%;
+    position: absolute;
+    bottom: 0px;
+    
+  }
+  nav .menu-icon .icon::after{
+    content: '';
+    width: 50%;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    
+  }
+  /* making the icon functional to open or close the navbar */
+nav .menu-icon.open .icon{
+    background: transparent;
+}
+  nav .menu-icon.open .icon::before{
+    transform: rotate(860deg);
+    width: 80%;
+    right: 0;
+}
+  nav .menu-icon.open .icon::after{
+    transform: rotate(-860deg);
+    width: 80%;
+    top: 0;
+  }
+}
