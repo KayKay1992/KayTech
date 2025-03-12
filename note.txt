@@ -1,1 +1,1 @@
-Adding he popular courses component with its styling
+Working on About Us page
