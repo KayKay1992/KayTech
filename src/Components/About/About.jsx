@@ -9,13 +9,13 @@ import aboutImg4 from "../../assets/aboutImg4.jpg";
 import knowledgeIconImg from "../../assets/knowledgeIconImg.jpg";
 import playIconImg from "../../assets/playIconImg.jpg";
 
-function About() {
+function About({setHideVideoPlayer}) {
   return (
     <div className="about">
       <div className="about-top">
         <div className="item-left">
           <img src={aboutMainImg} alt="" />
-          <span className="play-icon">
+          <span className="play-icon" onClick={()=> setHideVideoPlayer(false)}>
             <img src={playIconImg} alt="" />
           </span>
         </div>
