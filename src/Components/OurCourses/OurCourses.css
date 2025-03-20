@@ -1,0 +1,177 @@
+/* .online-class{
+    padding-left: 15%;
+    padding-left: 15%;
+    background: linear-gradient(var(--secondary-color) 30% 31%, var(--white-color)31%);
+
+}
+
+.online-class .img{
+    height: 450px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.online-class .img img{
+    width: 100%;
+}
+.attendees{
+  flex-wrap: wrap;
+  padding-right: 5%;
+  padding-left: 5%;
+  align-items: center;
+  justify-content: space-between;
+  top: -50px;
+  ;
+}
+
+.attendees .item{
+   flex-basis: 30%;
+    height: auto;
+    background-color: var(--white-color);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+}
+
+.attendees .item .img-ctn{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  
+    border: 3px dashed var(--primary-color);
+}
+
+.attendees .item .img-ctn img{
+    width: 100%;
+    height: 100%;
+}
+
+.attendees .item span{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+} */
+
+.online-class {
+    padding: 30px 15%; /* Adds padding to top and bottom, and left/right */
+    background: linear-gradient(var(--secondary-color) 30% 31%, var(--white-color) 31%);
+}
+
+.online-class .img {
+    height: 500px; /* Increased height of the image container */
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+}
+
+.online-class .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.attendees {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 5%; /* Adds padding around the attendees section */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px; /* Adjust the vertical positioning */
+}
+
+.attendees .item {
+    flex-basis: 30%;
+    height: auto;
+    background-color: var(--white-color);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    padding: 30px 20px; /* Adds padding inside the attendee item */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.attendees .item .img-ctn {
+    width: 150px; /* Increased size of the image container */
+    height: 150px; /* Increased size of the image container */
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 3px dashed var(--primary-color);
+}
+
+.attendees .item .img-ctn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circle container */
+}
+
+.attendees .item span {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.attendees .item .span{
+    font-size: 14px; /* Adjusted font size for smaller screens */
+    margin-bottom: 10px; /* Adjusted margin for smaller screens */
+    margin-top: 5px; /* Removed top margin on smaller screens */
+    color: var(--secondary-color);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .online-class {
+        padding: 30px 10%; /* Adjusted padding on medium screens */
+    }
+
+    .attendees .item {
+        flex-basis: 45%; /* Reduces item size on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .online-class {
+        padding: 20px 5%; /* Adjusted padding on small screens */
+    }
+
+    .attendees .item {
+        flex-basis: 100%; /* Stacks items vertically on smaller screens */
+    }
+    .attendees .item .img-ctn {
+        width: 200px;
+        height: 200px; /* Adjust image size on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .online-class {
+        padding: 20px 5%; /* Padding for mobile screens */
+    }
+
+    .attendees .item {
+        flex-basis: 100%; /* Full-width items on mobile screens */
+        padding: 20px; /* Adjust padding for small screens */
+    }
+
+    .attendees .item .img-ctn {
+        width: 150px;
+        height: 150px; /* Adjust image size on small screens */
+    }
+}
+

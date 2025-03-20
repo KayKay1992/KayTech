@@ -1,3 +1,0 @@
-Gallery photos component
-we show some images and with the more photos button we are able to view more photos in separate page by clicking the more photos button.
-then we are able to close it and next it or view the previous image.
