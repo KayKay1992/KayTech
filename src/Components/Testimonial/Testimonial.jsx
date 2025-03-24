@@ -62,7 +62,7 @@ function Testimonial() {
   }, [sliderCount, testimonialLength]); // Re-run when sliderCount or testimonialLength changes
 
   return (
-    <div className="testimonials">
+    <div className="testimonials" id="testimonials">
       <Title
         title="What Our Students Are Saying"
         titleText="Explore The Impact We Have Made On Our Students"

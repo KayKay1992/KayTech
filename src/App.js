@@ -11,6 +11,7 @@ import OurCourses from './Components/OurCourses/OurCourses';
 import Testimonial from './Components/Testimonial/Testimonial';
 import Contact from './Components/Contact/Contact';
 import CourseRegistration from './Components/RegisterNow/CourseRegistration';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -29,6 +30,7 @@ function App() {
      <Testimonial/>
      <CourseRegistration/>
      <Contact/>
+     <Footer/>
 
 
      <GalleryPhotos hideGallery={hideGallery} setHideGallery={setHideGallery}/>

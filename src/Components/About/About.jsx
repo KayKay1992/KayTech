@@ -11,7 +11,7 @@ import playIconImg from "../../assets/playIconImg.jpg";
 
 function About({setHideVideoPlayer}) {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about-top">
         <div className="item-left">
           <img src={aboutMainImg} alt="" />

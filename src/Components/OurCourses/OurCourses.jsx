@@ -12,11 +12,11 @@ import pic9 from '../../assets/uxImg.jpg'
 import pic10 from '../../assets/pic6.jpg'
 function OurCourses() {
   return (
-    <div className='online-class'>
+    <div className='online-class' >
         <div className="img">
             <img src={pic10} alt="" />
         </div>
-        <div className="attendees">
+        <div className="attendees"id='courses'>
             <div className="item">
                 <div className="img-ctn">
                     <img src={pic2} alt="" />

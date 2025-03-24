@@ -109,8 +109,10 @@ const CourseRegistration = () => {
   };
 
   return (
-    <div className="course-registration-container">
-      <h2 className="registration-title">Course Registration</h2>
+    
+   
+    <div className="course-registration-container" id='registration' >
+      <h2 className="registration-title" >Course Registration</h2>
       <form 
         onSubmit={handleSubmit}
         className="registration-form"
