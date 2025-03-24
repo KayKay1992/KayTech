@@ -10,6 +10,7 @@ import Title from './Components/Title/Title';
 import OurCourses from './Components/OurCourses/OurCourses';
 import Testimonial from './Components/Testimonial/Testimonial';
 import Contact from './Components/Contact/Contact';
+import CourseRegistration from './Components/RegisterNow/CourseRegistration';
 
 
 
@@ -26,6 +27,7 @@ function App() {
      <Title title='Our Courses' titleText='Explore The Courses we Offer'/>
      <OurCourses/>
      <Testimonial/>
+     <CourseRegistration/>
      <Contact/>
 
 

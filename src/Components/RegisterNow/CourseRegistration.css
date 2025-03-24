@@ -1,0 +1,161 @@
+.course-registration-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registration-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form-label {
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  .form-input, .form-select, .form-textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .form-input:focus, .form-select:focus, .form-textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .radio-input {
+    margin: 0;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .checkbox-input {
+    margin: 0;
+  }
+  
+  .checkbox-label {
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    /* padding-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+   
+    cursor: pointer;
+    */
+    width: 80%;
+    height: 50px; 
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 600;
+ 
+   
+  }
+  .submit-button::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+ 
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index: 1;
+    transition: left 0.4s ease;
+  }
+  
+  .submit-button:hover::before {
+    left: 0;
+   
+  } 
+  
+ .submit-button:hover {
+  color: var(--white-color);
+  background: var(--primary-color);
+ }
+/*   
+  .submit-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  } */
+  
+  .submission-message {
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .submission-message.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .submission-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .course-registration-container {
+      padding: 1rem;
+    }
+    
+    .radio-group {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
