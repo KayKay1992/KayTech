@@ -15,9 +15,18 @@
     background: var(--white-color);
 }
 
+.contact-container .left {
+    
+    margin: 10px;
+}
+
 .contact-container .left,
 .contact-container .right {
     flex-basis: 48%;
+}
+
+.contact-container .right{
+    margin: 20px;
 }
 
 .contact-container .left h3 {
@@ -29,11 +38,13 @@
     font-size: 16px;
 }
 
-.contact-container .contact {
+.contact-container .left .contact {
     display: flex;
     align-items: center;
     gap: 20px;
     margin-top: 20px;
+    margin-left: 20px;
+   
 }
 
 .contact-container .contact img {
@@ -143,7 +154,21 @@
         width: 25px;
     }
 }
+.response {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
 
+.response.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.response.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
 @media (max-width: 768px) {
     .contact-container {
         width: 90%;
