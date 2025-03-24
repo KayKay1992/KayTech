@@ -1,0 +1,283 @@
+/* .testimonials{
+    width: 80%;
+    margin: 100px auto;
+    position: relative;
+    overflow-x: hidden;
+    background: linear-gradient(var(--primary-color)50% 50%, var(--secondary-color)50%);
+}
+.testimonials .arrow-left, .testimonials .arrow-right{
+    position: absolute;
+   border-radius: 50px;
+    cursor: pointer;
+    padding: 10px;
+    background: var(--secondary-color);
+    width: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+
+
+.testimonials .arrow-right{
+    right: 0;
+}
+
+.testimonials .slider{
+   
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+    transition: 1s;
+    width: 500%;
+    transform: translateX(-50%);
+}
+
+.testimonials .slider .slide{
+    margin: 20px 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.slide .content{
+    width: 70%;
+    padding: 20px;
+    border-radius: 15px;
+    background: var(--secondary-color);
+}
+.testifier{
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 10px;
+   margin-bottom: 20px;
+}
+
+.testifier .img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--tertiary-color)
+}
+.testifier .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testifier-info h4{
+    color: var(--white-color);
+    font-weight: 25px;
+    opacity: 0.8=9;
+}
+
+.testifier-info span{
+    color: var(--white-color);
+    font-size: 16px;
+    opacity: 0.8;
+}
+.testimony{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.testimonials {
+    width: 90%;
+    margin: 100px auto;
+    position: relative;
+    overflow-x: hidden;
+    background: linear-gradient(var(--primary-color) 50% 50%, var(--secondary-color) 50%);
+    border-radius: 10px;
+}
+
+.testimonials .arrow-left, .testimonials .arrow-right {
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    background: var(--secondary-color);
+    width: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.testimonials .arrow-left:hover, .testimonials .arrow-right:hover {
+    background-color: var(--tertiary-color);
+}
+
+.testimonials .arrow-right {
+    right: 0;
+}
+
+.testimonials .slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    align-items: stretch;
+    justify-self: center;
+  
+}
+
+.testimonials .slider .slide {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Each slide will take up 50% of the container */
+    margin: 20px 10px;
+    
+   
+}
+
+.slide .content {
+    width: 70%; /* Content within each slide takes 48% of the slide's width */
+    padding: 20px;
+    border-radius: 15px;
+    background: var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    margin: 20px;
+}
+
+.slide:hover .content {
+    transform: scale(1.15);
+    opacity: 0.9;
+}
+
+.testifier {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.testifier .img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--tertiary-color);
+    transition: border-color 0.3s ease;
+}
+
+.testifier .img:hover {
+    border-color: var(--primary-color);
+}
+
+.testifier .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testifier-info h4 {
+    color: var(--white-color);
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.testifier-info span {
+    color: var(--white-color);
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.testimony {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+@media (max-width: 1024px) {
+    .testimonials {
+        width: 90%;
+    }
+
+    .testimonials .slider {
+        width: 400%;
+    }
+
+    .slide .content {
+        width: 45%;
+    }
+
+    .testifier .img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .testimony {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        width: 95%;
+        margin: 50px auto;
+    }
+
+    .testimonials .slider {
+        width: 250%;
+       
+    }
+
+    .slide .content {
+        width: 90%;
+      
+    }
+
+    .testifier .img {
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    .testimony {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials .arrow-left, .testimonials .arrow-right {
+        width: 35px;
+        padding: 8px;
+    }
+
+    .testimonials .slider {
+        width: 200%;
+    }
+
+    .slide .content {
+        width: 90%;
+    }
+
+    .testifier .img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimony {
+        height: 170px;
+    }
+}
+
+

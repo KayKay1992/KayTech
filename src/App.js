@@ -8,6 +8,7 @@ import Gallery from './Components/Gallery/Gallery';
 import GalleryPhotos from './Components/GallaryPhotos/GalleryPhotos';
 import Title from './Components/Title/Title';
 import OurCourses from './Components/OurCourses/OurCourses';
+import Testimonial from './Components/Testimonial/Testimonial';
 
 
 
@@ -25,6 +26,7 @@ function App() {
      <Title title='Our Courses' titleText='Explore The Courses we Offer'/>
      <GalleryPhotos hideGallery={hideGallery} setHideGallery={setHideGallery}/>
      <OurCourses/>
+     <Testimonial/>
     </div>
   );
 }
