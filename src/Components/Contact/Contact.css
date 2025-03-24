@@ -1,0 +1,236 @@
+.contact-us {
+    margin-top: 100px;
+    padding: 40px 0;
+    background: linear-gradient(var(--secondary-color) 70% 70%, var(--primary-color) 70%);
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: var(--box-shadow);
+    background: var(--white-color);
+}
+
+.contact-container .left,
+.contact-container .right {
+    flex-basis: 48%;
+}
+
+.contact-container .left h3 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.contact-container .left p {
+    font-size: 16px;
+}
+
+.contact-container .contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-container .contact img {
+    width: 20px;
+}
+
+.contact-container .social-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-container .social-links img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.contact-form * {
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button:hover span {
+    color: var(--primary-color);
+}
+
+.contact-form button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    right: 0;
+}
+
+.contact-form .response {
+    font-weight: 600;
+}
+
+.contact-form .spinner {
+    width: 30px;
+    animation: spinning 2s linear infinite;
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-container {
+        width: 80%;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-container .left,
+    .contact-container .right {
+        flex-basis: 100%;
+    }
+
+    .contact-container .left h3 {
+        font-size: 26px;
+    }
+
+    .contact-container .left p {
+        font-size: 14px;
+    }
+
+    .contact-container .contact {
+        gap: 15px;
+    }
+
+    .contact-container .social-links {
+        margin-top: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+
+    .contact-form .spinner {
+        width: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .contact-container .left,
+    .contact-container .right {
+        flex-basis: 100%;
+    }
+
+    .contact-container .left h3 {
+        font-size: 22px;
+    }
+
+    .contact-container .left p {
+        font-size: 14px;
+    }
+
+    .contact-container .contact {
+        gap: 10px;
+    }
+
+    .contact-container .social-links {
+        margin-top: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+
+    .contact-form .spinner {
+        width: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-us {
+        padding: 30px 0;
+    }
+
+    .contact-container {
+        width: 95%;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contact-container .left h3 {
+        font-size: 20px;
+    }
+
+    .contact-container .left p {
+        font-size: 14px;
+    }
+
+    .contact-container .contact {
+        gap: 8px;
+    }
+
+    .contact-container .social-links {
+        margin-top: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .contact-form .spinner {
+        width: 20px;
+    }
+
+    .contact-container .social-links img {
+        width: 25px;
+    }
+}
