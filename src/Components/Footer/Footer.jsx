@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-section">
-          <h3 className="footer-heading">Tech Academy</h3>
+          <h3 className="footer-heading">KayTech Academy</h3>
           <p className="footer-text">
             Empowering the next generation of tech professionals with industry-relevant skills and knowledge.
           </p>
@@ -55,14 +55,14 @@ const Footer = () => {
             </div>
             <div className="contact-item">
               <FaMapMarkerAlt className="contact-icon" />
-              <span>123 Tech Street, Lagos, Nigeria</span>
+              <span>123 Tech Street, PortHarcourt, Nigeria</span>
             </div>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Tech Academy. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} KayTech Academy. All Rights Reserved.</p>
         <div className="footer-legal">
           <a href="/privacy">Privacy Policy</a>
           <a href="/terms">Terms of Service</a>
